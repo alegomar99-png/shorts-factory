@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad de Shorts Factory</title>
+  <meta name="description" content="Cómo Shorts Factory accede, usa, almacena y elimina los datos de YouTube y de Google.">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="date">Shorts Factory · Última actualización: 2 de noviembre de 2026</p>
+
+    <p>Shorts Factory es una aplicación privada de uso personal que se ejecuta solo en el ordenador de su propietario. No está abierta al público y no tiene servidores propios en internet. Esta política describe lo que hace la aplicación.</p>
+
+    <h2>Servicios de API de YouTube</h2>
+    <p>Shorts Factory utiliza los servicios de API de YouTube. Al usar la aplicación aceptas las <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a> y se aplica la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
+
+    <h2>Permisos que solicita</h2>
+    <ul>
+      <li><code>youtube.upload</code>: subir vídeos al canal autorizado, con su título, descripción y estado de privacidad.</li>
+      <li><code>youtube.readonly</code>: identificar el canal conectado y comprobar el estado de los vídeos subidos.</li>
+      <li><code>yt-analytics.readonly</code>: ver las estadísticas de los vídeos subidos por la aplicación.</li>
+    </ul>
+    <p>La aplicación no borra vídeos ni edita los ya publicados. La subida se hace como vídeo privado salvo que el propietario active expresamente la publicación automática; en ese caso, el vídeo se programa para una hora concreta.</p>
+
+    <h2>Qué datos usa</h2>
+    <ul>
+      <li><strong>Del canal conectado:</strong> identificador, nombre y número de suscriptores.</li>
+      <li><strong>De los vídeos subidos:</strong> identificador, enlace, título, estado de privacidad y de subida, y fecha de subida y de publicación.</li>
+      <li><strong>Estadísticas de esos vídeos:</strong> vistas, vistas con interacción, minutos vistos, duración y porcentaje medios vistos, likes, comentarios (solo el número), compartidos y suscriptores conseguidos.</li>
+      <li><strong>Datos públicos de YouTube para investigar tendencias:</strong> identificadores de canales y vídeos, títulos, duración, fechas, vistas y subtítulos públicos de vídeos de otros creadores. Se obtienen con una clave de API de YouTube y con la herramienta de código abierto yt-dlp. No se descargan esos vídeos.</li>
+      <li><strong>Datos de acceso:</strong> los permisos que entrega Google para que la aplicación siga conectada.</li>
+    </ul>
+    <p>Son estadísticas agregadas. La aplicación no obtiene los nombres de los espectadores ni el texto de sus comentarios. Tampoco lee la contraseña de Google.</p>
+
+    <h2>Para qué se usan</h2>
+    <p>Solo para crear vídeos originales, subirlos al canal de su propietario, comprobar que se han subido bien y decidir qué formatos probar a continuación. No se usan para publicidad ni se venden. El uso de los datos recibidos de las API de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+    <h2>Inteligencia artificial</h2>
+    <p>Las imágenes, la animación, los subtítulos y la música se generan en el ordenador del propietario. La voz se genera allí por defecto.</p>
+    <p>La selección de temas y los guiones los prepara Claude, el asistente de inteligencia artificial de Anthropic, que su propietario utiliza por su cuenta. Para ello, Claude puede ver los datos públicos de la investigación, los títulos de los vídeos subidos y un resumen de qué formatos han funcionado mejor, calculado con las estadísticas. Estos datos se tratan según las condiciones de Anthropic.</p>
+    <p>Si el propietario elige una voz de Microsoft, el texto del guion se envía a Microsoft para generar el audio. Ese texto no contiene datos de la cuenta de Google.</p>
+    <p>Los datos de Google no se usan para entrenar modelos de inteligencia artificial generalizados.</p>
+
+    <h2>Dónde se guardan y cómo se protegen</h2>
+    <ul>
+      <li>Los datos se guardan en archivos dentro de la carpeta de la aplicación, en el ordenador de su propietario.</li>
+      <li>Los datos de acceso, el identificador OAuth y la clave de API se guardan en una carpeta local privada que no se publica ni se sube a ningún repositorio.</li>
+      <li>Los archivos no están cifrados por la aplicación. Su protección depende de la cuenta de usuario del ordenador.</li>
+      <li>Las conexiones con Google se hacen mediante HTTPS.</li>
+    </ul>
+
+    <h2>Con quién se comparten</h2>
+    <p>La aplicación solo se comunica con los servicios de Google para los fines descritos, y con los servicios indicados en «Inteligencia artificial». No envía estos datos a servidores propios ni a nadie más. Los vídeos subidos se muestran en YouTube según su estado de privacidad.</p>
+
+    <h2>Cookies y datos en el dispositivo</h2>
+    <p>La aplicación no incluye publicidad, ni cookies, ni herramientas de analítica. Guarda en el dispositivo los archivos descritos arriba. Esta página web tampoco usa cookies ni herramientas de analítica propias. El servicio que aloja esta web puede registrar datos técnicos de las visitas, como la dirección IP.</p>
+
+    <h2>Cuánto tiempo se conservan</h2>
+    <ul>
+      <li>Los datos públicos sobre vídeos de otros creadores se eliminan a los 30 días, en la limpieza periódica de la aplicación. Se conserva la lista de identificadores de canales ya analizados.</li>
+      <li>Las estadísticas y el registro de vídeos subidos se conservan mientras el canal siga conectado. La aplicación comprueba el permiso en cada ejecución.</li>
+      <li>Si Google indica que el permiso ya no es válido, estos datos se eliminan.</li>
+      <li>Si el permiso no se puede confirmar y las estadísticas tienen más de 30 días, también se eliminan.</li>
+      <li>Mientras el ordenador está apagado no se hacen comprobaciones. Se hacen en la siguiente ejecución.</li>
+    </ul>
+
+    <h2>Cómo retirar el permiso y borrar los datos</h2>
+    <ul>
+      <li>El programa <strong>desconectar_youtube</strong> retira el permiso en Google y borra los datos de acceso, las estadísticas, el registro de vídeos subidos y el resumen de estrategia.</li>
+      <li>También puedes retirar el permiso desde la <a href="https://security.google.com/settings/security/permissions">configuración de seguridad de Google</a>.</li>
+    </ul>
+    <p>Borrar los datos de la aplicación no cambia nada en YouTube ni en Google: los vídeos ya subidos siguen en el canal hasta que su propietario los elimine.</p>
+
+    <h2>Contacto</h2>
+    <p>Para dudas o quejas sobre privacidad, o para pedir que se borren tus datos, escribe a <a href="mailto:milocozyhome@gmail.com">milocozyhome@gmail.com</a>. Las solicitudes de borrado se atienden en un máximo de 7 días.</p>
+
+    <h2>Cambios</h2>
+    <p>Si la aplicación cambia la forma de tratar los datos, esta página se actualizará y cambiará su fecha.</p>
+  </main>
+  <footer>
+    <a href="index.html">Shorts Factory</a> · <a href="mailto:milocozyhome@gmail.com">milocozyhome@gmail.com</a>
+  </footer>
+</body>
+</html>
