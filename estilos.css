@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fcfcfb;
+  --text: #1b1b1a;
+  --muted: #5c5b56;
+  --line: #e0dfd9;
+  --accent: #1f62b5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615;
+    --text: #f0efec;
+    --muted: #b6b5ab;
+    --line: #33332f;
+    --accent: #7db2f0;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 "Segoe UI", system-ui, sans-serif;
+}
+
+main, footer { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+main { padding-top: 48px; padding-bottom: 32px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 12px; }
+h2 { font-size: 21px; line-height: 1.25; margin: 36px 0 8px; }
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--accent); }
+code { font-size: 15px; overflow-wrap: anywhere; }
+.intro { font-size: 19px; color: var(--muted); }
+.date { color: var(--muted); font-size: 15px; }
+footer { border-top: 1px solid var(--line); padding-top: 16px; padding-bottom: 32px; color: var(--muted); font-size: 15px; }
